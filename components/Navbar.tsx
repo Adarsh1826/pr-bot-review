@@ -12,9 +12,22 @@ export default function Navbar({ repoUrl, downloadUrl }: NavbarProps) {
   return (
     <nav className="flex justify-between items-center px-6 py-3 border-b bg-black sticky top-0 z-50">
 
-      <h2 className="text-xl font-semibold">
-        PR Review Bot
-      </h2>
+        <div className="flex">
+            <Image
+            src="/pr-bot-review-logo1.jpeg"   
+            alt="PR Bot Logo"
+            width={30}
+            height={30}
+            className="rounded-lg"
+            />
+
+            <h2 className="text-xl ml-5 font-semibold">
+                PR Review Bot
+            </h2>
+        </div>
+
+
+      
 
       <div className="flex items-center gap-4">
 
